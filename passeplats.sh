@@ -14,5 +14,4 @@ do
 
 done
 
-rm -rf /tmp/out/log
 rm -rf /tmp/out/lock
