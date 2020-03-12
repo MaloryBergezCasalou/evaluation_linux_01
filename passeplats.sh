@@ -12,11 +12,6 @@ do
 		echo "le(s) fichier(s) " $/tmp/out/*"bien compresse(s)" >> /tmp/out/log
 	fi
 
-	if [ -e ${LOCKFILE} ] && kill -0 cat ${LOCKFILE}; then
-    echo "Code : 22"
-    exit
-	fi
-
 done
 
 rm -rf /tmp/out/log
