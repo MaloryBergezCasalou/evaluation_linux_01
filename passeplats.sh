@@ -9,7 +9,7 @@ do
 	then
 		gzip $fichiers
 		mv /tmp/in/* /tmp/out/ 
-		echo "les fichiers " $/tmp/out/*"ont bien étés compresses" >> /tmp/out/log
+		echo "les fichiers " $fichiers "ont bien étés compresses" >> /tmp/out/log
 	fi
 
 done
