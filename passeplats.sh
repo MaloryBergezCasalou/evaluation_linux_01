@@ -3,12 +3,12 @@
 touch /tmp/out/lock
 touch /tmp/out/log
 
-for * in /tmp/in/
+for fichiers in /tmp/in/*
 do
-	if [-f $/tmp/in/* ]
+	if [ -f $fichiers ]
 	then
-		gzip $/tmp/in/*
-		mv /tmp/in/* /tmp/out/
+		gzip $fichiers
+		mv /tmp/in/* /tmp/out/ 
 		echo "les fichiers " $/tmp/out/*"ont bien étés compresses" >> /tmp/out/log
 	fi
 
