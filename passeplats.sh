@@ -9,12 +9,10 @@ do
 	then
 		gzip $/tmp/in/*
 		mv /tmp/in/* /tmp/out/
-		echo "le(s) fichier(s) " $/tmp/out/*"bien compresse(s)" >> /tmp/out/log
+		echo "les fichiers " $/tmp/out/*"ont bien étés compresses" >> /tmp/out/log
 	fi
 
 done
 
 rm -rf /tmp/out/log
 rm -rf /tmp/out/lock
-
-aefzazefez
